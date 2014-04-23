@@ -1,0 +1,29 @@
+@charset "gb2312";
+/* CSS Document */
+body{ background:url(imgs/bg.jpg) repeat-x top left}
+.texbox{ background: url(imgs/indexbg.png) no-repeat top center; width:1024px; margin:0 auto; overflow:hidden}
+.texbox .main{ padding:0px; margin:0px; overflow:hidden; height:100%}
+.texbox .main .nav{ padding-top:50px; float:left; width:874px; display:inline; overflow:hidden; padding-right:90px; padding-left:60px;}
+.texbox .main .nav .logo{ background:url(imgs/left_logo.jpg) no-repeat left center; height:40px; float:left; width:180px; line-height:40px;}
+.texbox .main .nav ul{ background:url(imgs/nav.png) no-repeat right center; list-style:none; height:40px; padding:0 20px 0 40px; line-height:40px; width:620px; overflow:hidden; float:right;}
+.texbox .main .nav ul li{ float:left; color:#fff; width:95px; text-align:center; height:40px; line-height:40px; padding-left:5px;}
+.texbox .main .nav ul li:hover{ background:url(imgs/on.png) no-repeat center center; color:#333}
+.texbox .main .nav ul li:hover a{ color:#333; text-shadow: 1px 1px #fff; background:url(imgs/b.png) no-repeat left center;}
+
+.texbox .main .nav ul li a{ font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; color:#fff; font-size:16px; font-weight:100; padding:0 10px 0 15px;  background:url(imgs/d.png) no-repeat left center; padding-left:18px; text-shadow: 1px 1px #333;}
+
+
+
+.texbox .main .about{ padding-left:580px; padding-top:95px; color:#fff; float:left; display:inline; width:365px; background: url(imgs/line.png) no-repeat bottom right; padding-bottom:20px;}
+
+.texbox .main .about h1{ background:url(imgs/index_logo.png) no-repeat; width:200px; height:64px; text-indent:-999px; }
+.texbox .main .about h3{ padding:32px 0 35px 0px; text-align:left; font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; font-size:18px; color:#e5c777; font-weight:100; text-shadow: 1px 1px #40730e;}
+.texbox .main .about p{ font-size:14px; font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; font-weight:500; line-height:28px; letter-spacing:1px; text-shadow: 1px 1px #40730e;}
+
+.texbox .main .pic{ width:1024px; float:left; display:inline; padding-top:60px;}
+.texbox .main .pic ul{ list-style:none; overflow:hidden; padding-left:80px;}
+.texbox .main .pic ul li{ float:left; width:180px; padding:0 50px; height:230px; overflow:hidden}
+
+.texbox .main .pic ul li h3{ background:url(imgs/bigdot.png) no-repeat left center; margin-left:20px; padding-left:25px; font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; height:28px; line-height:28px; font-weight:normal; color:#fff; font-size:18px; text-shadow: 1px 1px #333;}
+.texbox .main .pic ul li p{ overflow:hidden; padding-top:10px;}
+.texbox .foot{ text-align:center; font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; font-size:12px; color:#333; padding:20px 0 30px 0; line-height:20px;}
