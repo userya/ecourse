@@ -24,12 +24,12 @@ body {
 }
 
 
-/****/
-.top .nav { background:url(imgs/nav.png) no-repeat right center; list-style:none; height:40px; padding:0 20px 0 40px;  width:620px;  float:right; position:absolute; right:20px; bottom:2px;}
-.top .nav li { float:left; color:#fff; width:95px; text-align:center; height:40px; line-height:40px; padding-left:5px;}
+
+.top .nav { background:url(imgs/nav.png) no-repeat right center; list-style:none; height:40px; padding:0 20px 0 40px; line-height:40px; width:620px; overflow:hidden; float:right; position:absolute; right:20px; bottom:2px;}
+.top .nav li { float:left; color:#fff; width:88px; text-align:center; height:40px; line-height:40px;}
 .top .nav li:hover { background:url(imgs/on.png) no-repeat center center; color:#333}
 .top .nav li:hover a { color:#333; text-shadow: 1px 1px #fff; background:url(imgs/b.png) no-repeat left center;}
-.top .nav li a { font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; color:#fff; font-size:16px; font-weight:100; padding:0 10px 0 15px;  background:url(imgs/d.png) no-repeat left center; padding-left:18px; text-shadow: 1px 1px #333;}
+.top .nav li a { font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; color:#fff; font-size:16px; font-weight:100; padding:0 5px 0 10px;  background:url(imgs/d.png) no-repeat left center; padding-left:13px; text-shadow: 1px 1px #333; }
 
 .main {
 	width:1024px;

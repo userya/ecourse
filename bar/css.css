@@ -6,11 +6,12 @@ body{ background:url(imgs/bg.jpg) repeat-x top left}
 .texbox .main .nav{ padding-top:50px; float:left; width:874px; display:inline; overflow:hidden; padding-right:90px; padding-left:60px;}
 .texbox .main .nav .logo{ background:url(imgs/left_logo.jpg) no-repeat left center; height:40px; float:left; width:180px; line-height:40px;}
 .texbox .main .nav ul{ background:url(imgs/nav.png) no-repeat right center; list-style:none; height:40px; padding:0 20px 0 40px; line-height:40px; width:620px; overflow:hidden; float:right;}
-.texbox .main .nav ul li{ float:left; color:#fff; width:95px; text-align:center; height:40px; line-height:40px; padding-left:5px;}
+.texbox .main .nav ul li{ float:left; color:#fff; width:88px; text-align:center; height:40px; line-height:40px;}
 .texbox .main .nav ul li:hover{ background:url(imgs/on.png) no-repeat center center; color:#333}
-.texbox .main .nav ul li:hover a{ color:#333; text-shadow: 1px 1px #fff; background:url(imgs/b.png) no-repeat left center;}
+.texbox .main .nav ul li:hover a { color:#333; text-shadow: 1px 1px #fff; background:url(imgs/b.png) no-repeat left center;}
 
-.texbox .main .nav ul li a{ font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; color:#fff; font-size:16px; font-weight:100; padding:0 10px 0 15px;  background:url(imgs/d.png) no-repeat left center; padding-left:18px; text-shadow: 1px 1px #333;}
+.texbox .main .nav ul li a{ font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ; color:#fff; font-size:16px; font-weight:100; padding:0 5px 0 10px;  background:url(imgs/d.png) no-repeat left center; padding-left:13px; text-shadow: 1px 1px #333; }
+
 
 
 
