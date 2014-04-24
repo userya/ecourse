@@ -1,0 +1,33 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+.mianbox {
+	padding:50px 0 0 90px;
+	overflow:hidden
+}
+.mianbox ul {
+	list-style:none
+}
+.mianbox ul li {
+	height:85px;
+	background:url(imgs/dot_02.png) no-repeat left center;
+	padding-left:130px;
+	margin-bottom:50px;
+}
+.mianbox ul li a {
+	display:block;
+	width:370px;
+	height:60px;
+	border-radius:10px;
+	background:#0e679e;
+	color:#fff;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ;
+	font-size:20px;
+	line-height:60px;
+	text-align:center;
+}
+.mianbox ul li a.gey {
+	background:#ccc;
+	color:#222
+}
