@@ -1,0 +1,119 @@
+.indexPart1{height:225px; position:relative; background:url(../image/lbg.png) left top no-repeat; position:relative;}
+.indexPart1 .list{width:611px; height:196px; position:absolute; left:50px; top:3px;}
+/*.indexPart1 ul{width:2000%;}
+.indexPart1 li{float:left; width:611px; overflow:hidden;}*/
+.indexPart1 .contentDiv{position:absolute; right:78px; top:85px; padding-left:24px; background:url(../image/limg9.png) left center no-repeat;}
+.indexPart1 .name{color:#51728f;}
+.indexPart1 .leftBtn{display:block; width:25px; height:26px; overflow:hidden; background:url(../image/lleftBtn1.png) left top no-repeat; position:absolute; left:15px; top:165px;}
+.indexPart1 .rightBtn{display:block; width:25px; height:26px; overflow:hidden; background:url(../image/lrightBtn1.png) left top no-repeat; position:absolute; right:214px; top:165px;}
+.indexPart1 .leftBtn:hover{background:url(../image/lleftBtn.png) left top no-repeat;}
+.indexPart1 .rightBtn:hover{background:url(../image/lrightBtn.png) left top no-repeat;}
+
+.indexDiv{height:219px; overflow:hidden; background:#3b75aa; color:#FFF; border-top:#8cacc9 solid 1px; padding-top:39px;}
+
+.pageBanner{background:url(../image/pageBanner.gif) bottom repeat-x; height:210px; overflow:hidden;}
+.pageBanner a{display:block; height:196px; overflow:hidden;}
+
+.indexPart2{width:260px; overflow:hidden;}
+.indexPart2 .title{padding:23px 0 0 14px; font-size:15px; height:21px; overflow:hidden; border-bottom:#e1e1e1 solid 1px; background:url(../image/limg8.gif) left 29px no-repeat; position:relative;}
+.indexPart2 .more{position:absolute; right:0px; top:25px; background:url(../image/more.png) left top no-repeat; width:48px; height:12px; overflow:hidden; display:block;}
+.indexPart2 .content{padding:15px 10px 0 10px; line-height:25px;}
+.indexPart2 .list{padding:15px 0 0 10px;}
+.indexPart2 li{height:25px; overflow:hidden; padding-left:11px; background:url(../image/lico.gif) left 6px no-repeat;}
+.indexPart2 li a{color:#fff;}
+.indexPart2 li a:hover{text-decoration:underline;}
+
+.indexPart3{background:url(../image/lbg1.png) left top no-repeat; width:307px; height:178px; overflow:hidden; padding-left:23px; position:relative; left:35px;}
+.indexPart3 h2{height:60px; line-height:60px; overflow:hidden; padding-left:18px; background:url(../image/limg8_1.gif) left center no-repeat;}
+.indexPart3 li{height:20px; overflow:hidden;}
+.indexPart3 .imgDiv{position:absolute; right:26px; top:25px;}
+
+.sideTitle{height:60px; padding-top:35px; overflow:hidden; font-size:28px; color:#3e3e3e; font-family:"黑体";}
+.sideTitle span{font-size:14px; color:#b21b37; font-weight:bold; padding-right:5px;}
+
+.sideNav li{font-size:14px; float:left; width:155px; overflow:hidden; border-bottom:#FFF solid 1px; font-family:"黑体";}
+.sideNav a{color:#fff; display:block; overflow:hidden; height:26px; line-height:26px; background:#004d94; padding-left:10px;}
+.sideNav a:hover, .sideNav .aNow{background:#5f9acb; color:#000;}
+.sideNav .list{display:none;}
+.sideNav .list a{background:none; padding-left:25px; color:#000;}
+.sideNav .list a:hover, .sideNav .list .aNow{color:#004d94; background:url(../image/lico.png) 13px center no-repeat;}
+
+.pageNow{height:95px; line-height:95px; overflow:hidden; padding-left:35px; background:url(../image/limg19.png) 6px center no-repeat; font-size:18px; font-weight:bold; color:#004d94; font-family:"黑体";}
+.pageNow a{color:#3d3d3d;}
+.pageNow .a1{color:#004d94; font-size:24px;}
+.pageNow span{color:#3d3d3d;}
+
+.pageTab{height:74px; overflow:hidden; background:url(../image/pageTab.gif) left 38px repeat-x; font-family:"黑体";}
+.pageTab li{float:left; width:102px; padding-left:10px; height:38px; line-height:38px; overflow:hidden; font-size:18px;}
+.pageTab .liNow{height:42px; overflow:hidden; background:#b1b1b1;}
+.pageTab .li_01{border-left:#ecb716 solid 20px;}
+.pageTab .li_02{border-left:#ec8516 solid 20px;}
+
+.pageContent{font-size:14px; color:#000;}
+.pageContent .contentDiv{min-height:295px; _height:295px; padding-left:410px; position:relative; font-size:18px;}
+.pageContent .imgDiv{position:absolute; left:0px; top:0px;}
+.pageContent h1{padding:13px 0 30px 0;} 
+.pageContent .content{line-height:27px; padding-left:9px;}
+.pageContent span{color:#9c0101; padding:0 5px;}
+.pageContent .notice{padding-left:3px; font-weight:bold; color:#000; height:65px; overflow:hidden;}
+.pageContent .msg{padding-left:3px; line-height:27px;}
+.pageContent .msg span{padding-left:0px; color:#004d94;}
+
+.expert{position:relative; padding-left:149px; min-height:100px; _height:100px;}
+.expert .imgDiv{position:absolute; left:0px; top:0px;}
+.expert .content{padding-top:7px; width:340px; overflow:hidden; color:#000; font-size:18px; line-height:27px;}
+
+.Teacher{padding:30px 0 77px 0; text-align:center;}
+
+.pageBtn{text-align:right; background:url(../image/limg22.png) right center no-repeat; padding-right:42px; font-size:18px;}
+.pageBtn a{color:#000;}
+
+.file{padding-top:25px; text-align:center;}
+
+.Condition{position:relative; min-height:100px; _height:100px; padding-top:26px;}
+.Condition .leftBtn{display:block; position:absolute; left:0px; top:120px; z-index:10; width:36px; height:45px; overflow:hidden; background:url(../image/lleftBtn2.png) left top no-repeat;}
+.Condition .rightBtn{display:block; position:absolute; right:0px; top:120px; z-index:10; width:36px; height:45px; overflow:hidden; background:url(../image/lrightBtn2.png) left top no-repeat;}
+.Condition .list{width:500px; height:281px; overflow:hidden; margin:0 auto;}
+.Condition ul{width:2000%;}
+.Condition li{float:left; width:500px; overflow:hidden;}
+.Condition h1{padding:50px 0 30px 0; font-size:18px; color:#013d7f; text-align:center;}
+.Condition .content{line-height:20px; font-size:14px; color:#000; padding-bottom:80px;}
+
+.Courseware{border-top:#004d94 solid 4px; padding-top:20px; min-height:100px; _height:100px; font-size:18px;}
+.Courseware li{height:44px; overflow:hidden;}
+.Courseware span{padding:0 35px;}
+.Courseware a{color:#000; display:block; height:44px; line-height:44px; overflow:hidden;}
+.Courseware a:hover{background:#ccc;}
+
+.material{position:relative; min-height:100px; _height:100px;}
+.material .leftBtn{display:block; position:absolute; left:0px; top:355px; z-index:10; width:36px; height:45px; overflow:hidden; background:url(../image/lleftBtn2.png) left top no-repeat;}
+.material .rightBtn{display:block; position:absolute; right:0px; top:355px; z-index:10; width:36px; height:45px; overflow:hidden; background:url(../image/lrightBtn2.png) left top no-repeat;}
+.material .list{width:583px; height:838px; overflow:hidden; margin:0 auto;}
+.material ul{width:2000%;}
+.material li{float:left; height:807px; width:583px; overflow:hidden;}
+
+.Demonstration .title{height:39px; line-height:39px; overflow:hidden; padding-left:25px; background:url(../image/limg19.gif) left top no-repeat; font-size:18px;}
+.Demonstration .title1{background:url(../image/limg19_1.gif) left top no-repeat;}
+.Demonstration .title2{background:url(../image/limg19_2.gif) left top no-repeat;}
+.Demonstration .title:hover{color:#004d94;}
+.Demonstration .list{height:125px; overflow:hidden; background:url(../image/lbg1.gif) left top repeat-x; padding:4px 0 0 87px;}
+.Demonstration li{float:left; height:43px; width:155px; line-height:43px; overflow:hidden; font-size:18px;}
+.Demonstration a{color:#000; padding-left:10px; background:url(../image/limg5_1.png) left center no-repeat;}
+.Demonstration a:hover{color:#004d94; padding-left:10px; background:url(../image/limg5_2.png) left center no-repeat;}
+
+.effect .content{text-align:center; font-size:14px; line-height:24px; color:#000; padding-bottom:45px;}
+.effect h1{font-size:18px; color:#004d94; padding-bottom:2px;}
+
+.effectList{position:relative; min-height:100px; _height:100px;}
+.effectList .leftBtn{display:block; position:absolute; left:0px; top:205px; z-index:10; width:36px; height:45px; overflow:hidden; background:url(../image/lleftBtn2.png) left top no-repeat;}
+.effectList .rightBtn{display:block; position:absolute; right:0px; top:205px; z-index:10; width:36px; height:45px; overflow:hidden; background:url(../image/lrightBtn2.png) left top no-repeat;}
+.effectList .list{width:329px; height:480px; overflow:hidden; margin:0 auto;}
+.effectList ul{width:2000%;}
+.effectList li{float:left; height:445px; width:329px; overflow:hidden;}
+
+.taught .name{text-align:center; font-size:24px; color:#ec8516;}
+.taught .msg{font-size:18px; color:#004d94; text-align:center;}
+.taught .imgDiv{text-align:center; padding:15px 0 25px 0;}
+.taught .content{font-size:14px; color:#000; line-height:27px;}
+.taught span{color:#013d7f;}
+

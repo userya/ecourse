@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0px; padding:0px; font-size:12px; font-family:"微软雅黑"; color:#333; background:url(../image/bodyBg.gif) top repeat-x;}
+a{color:#333; text-decoration:none; outline:none;}
+a:active{star:expression(this.onFocus=this.blur());} 
+img{border:0px;}
+a:link {text-decoration: none; outline:none;}
+a:visited{text-decoration: none; outline:none;}
+a:hover{text-decoration:none; color:#1c5a97; outline:none;}
+ul, p, dl, dt, dd{padding:0px; margin:0px;}
+li{list-style-position:outside; list-style-type:none;}
+h1, h2, h3, h4, h5{font-size:14px; padding:0px; margin:0px;}
+h1{font-size:16px;}
+h5{font-size:12px;}
+.fl{float:left;}
+.fr{float:right;}
+.clear_f{clear:both; height:0px; padding:0px; margin:0px; display:block; _display:inherit;}
+.h10{height:10px; overflow:hidden; clear:both;}
+.h50{height:50px; overflow:hidden; clear:both;}
+.w155{width:155px; overflow:hidden;}
+.w715{width:715px; overflow:hidden;}
+
+.wal{width:910px; margin:0px auto;}
+
+.logo{position:absolute; z-index:20; left:0px; top:0px; width:50%; text-align:right; background:url(../image/logoBg.png) right bottom no-repeat; padding:50px 0 20px 0;}
+.logo a{padding:0 55px;}
+
+.navDiv{height:200px; overflow:hidden; position:relative;}
+.nav{background:url(../image/nav.png) left top no-repeat; width:585px; height:50px; overflow:hidden; position:absolute; left:215px; top:145px; padding-left:50px; font-family:"黑体";}
+.nav li{float:left; height:35px; line-height:32px; overflow:hidden; padding-right:29px; font-size:18px;}
+.nav a{color:#fff; text-shadow:1px 1px 2px #333;}
+.nav a:hover, .nav .aNow{color:#000; text-shadow:1px 1px 2px #fff;}
+
+.footDiv{height:95px; padding-top:20px; overflow:hidden; background:#ccc; text-align:center; line-height:20px; color:#666;}
+
+.tabContent{display:none;}
+
+.pageNum{text-align:center;}
+.pageNum a{display:inline-block; height:30px; line-height:30px; padding:0 12px; border:#2b4562 solid 1px; margin:0 5px;}
+.pageNum a:hover, .pageNum .aNow{background:#013d7f; color:#fff;}
+.pageNum .msg{padding-top:15px; color:#000; font-size:14px;}
+.pageNum span{color:#890000; padding:0 11px;}
+
+.pageBack{text-align:right; padding-top:50px;}

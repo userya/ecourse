@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>车身金属件整形修复</title>
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+<link href="style/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="script/js.js"></script>
+<script language="javascript" type="text/javascript" src="script/fun.js"></script>
+<!--[if lte IE 6]>
+<script src="script/png.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]--> 
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<link rel="stylesheet" type="text/css" href="style/custom.css" />
+<script type="text/javascript" src="script/modernizr.custom.79639.js"></script> 
+<noscript><link rel="stylesheet" type="text/css" href="style/noJS.css" /></noscript>
+</head>
+
+<body>
+<div class="logo"><a href=""><img src="image/logo.png" alt="" /></a></div>
+<div class="wal navDiv">
+      <div class="nav">
+           <ul>
+             <li><a href="index.html" class="aNow">首页</a></li>
+             <li><a href="team.html">课程团队</a></li>
+             <li><a href="File.html">教学文件</a></li>
+             <li><a href="Condition.html">教学条件</a></li>
+             <li><a href="Implement.html">教学实施</a></li>
+             <li><a href="Online.html">在线学习</a></li>
+           </ul>
+      </div>
+</div>
+
+<div class="wal indexPart1">
+     <a href="javascript:;" class="leftBtn" id="bb-nav-prev"></a>
+     <a href="javascript:;" class="rightBtn" id="bb-nav-next"></a>
+     <div class="list">
+         <!--<ul>
+           <li><a href=""><img src="image/limg611.jpg" alt="" /></a></li>
+           <li><a href=""><img src="image/limg611.jpg" alt="" /></a></li>
+           <li><a href=""><img src="image/limg611.jpg" alt="" /></a></li>
+         </ul>-->
+<section class="main">
+
+				<div class="bb-custom-wrapper">
+					<div id="bb-bookblock" class="bb-bookblock">
+						<div class="bb-item">
+							<a href=""><img src="image/limg611.jpg" width="611" height="196" alt="image01"/></a>
+						</div>
+						<div class="bb-item">
+							<a href=""><img src="image/limg611.jpg" alt="image02"/></a>
+						</div>
+						<div class="bb-item">
+							<a href=""><img src="image/limg611.jpg" alt="image03"/></a>
+						</div>
+						<div class="bb-item">
+							<a href=""><img src="image/limg611.jpg" alt="image04"/></a>
+						</div>
+						<div class="bb-item">
+							<a href=""><img src="image/limg611.jpg" alt="image05"/></a>
+						</div>
+					</div>
+				</div>
+				
+</section>
+     </div>
+     <div class="contentDiv">
+         <div class="name">Excellent course</div>
+         <h2>精品课程系列</h2>
+     </div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="script/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="script/jquery.bookblock.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var Page = (function() {
+
+					var config = {
+							$bookBlock: $( '#bb-bookblock' ),
+							$navNext	: $( '#bb-nav-next' ),
+							$navPrev	: $( '#bb-nav-prev' ),
+							$navJump	: $( '#bb-nav-jump' ),
+							bb				: $( '#bb-bookblock' ).bookblock( {
+								speed				: 800,
+								shadowSides	: 0.8,
+								shadowFlip	: 0.7
+							} )
+						},
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							var $slides = config.$bookBlock.children(),
+									totalSlides = $slides.length;
+
+							// add navigation events
+							config.$navNext.on( 'click', function() {
+
+								config.bb.next();
+								return false;
+
+							} );
+
+							config.$navPrev.on( 'click', function() {
+								
+								config.bb.prev();
+								return false;
+
+							} );
+
+							config.$navJump.on( 'click', function() {
+								
+								config.bb.jump( totalSlides );
+								return false;
+
+							} );
+							
+							// add swipe events
+							$slides.on( {
+
+								'swipeleft'		: function( event ) {
+								
+									config.bb.next();
+									return false;
+
+								},
+								'swiperight'	: function( event ) {
+								
+									config.bb.prev();
+									return false;
+									
+								}
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+</script>
+
+<div class="indexDiv">
+<div class="wal">
+      <div class="fl indexPart2">
+           <div class="title">
+               <h2>课程特色</h2>
+               <a href="" class="more"></a>
+           </div>
+           <div class="content">
+           《车身金属件整形修复》是汽车车身修复专业
+的一门专业技术课程，具有较强理论性和实践
+性的课程，为学生后续的企业实习和毕业后从
+事汽车车身修复专业的技术工作...
+           </div>
+      </div>
+      <div class="fl indexPart3">
+           <h2 class="title">课程负责人</h2>
+           <div class="list">
+                <ul>
+                	<li><a href="team.html">王明辉</a></li>
+                <!-- 
+                  <li><a href="">车身金属整形主要课程负责人...</a></li>
+                  <li><a href="">车身金属整形主要课程负责人...</a></li>
+                  <li><a href="">车身金属整形主要课程负责人...</a></li>
+                  <li><a href="">车身金属整形主要课程负责人...</a></li>
+                  <li><a href="">车身金属整形主要课程负责人...</a></li>
+                   -->
+                </ul>
+           </div>
+           <div class="imgDiv"><img src="image/limg100.jpg" alt="" /></div>
+      </div>
+      <div class="fr indexPart2">
+          <div class="title">
+               <h2>公告 通知</h2>
+               <a href="" class="more"></a>
+          </div>
+          <div class="list">
+<div id="demo_up" style="height:100px; overflow:hidden; position:relative;">
+<div id="indemo_up">
+<div id="demo1_up">
+           <ul>
+             <li><a href="">通过学习汽车美容装饰的课程，掌握学习...</a></li>
+             <li><a href="">通过学习汽车美容装饰的课程，掌握学习...</a></li>
+             <li><a href="">通过学习汽车美容装饰的课程，掌握学习...</a></li>
+             <li><a href="">通过学习汽车美容装饰的课程，掌握学习...</a></li>
+           </ul>
+</div>
+<div id="demo2_up"></div>
+</div>
+</div>
+
+<script>
+<!--
+var speed_up=50; //数字越大速度越慢
+var tab_up=document.getElementById("demo_up");
+var tab1_up=document.getElementById("demo1_up");
+var tab2_up=document.getElementById("demo2_up");
+tab2_up.innerHTML=tab1_up.innerHTML;
+function Marquee_up(){
+if(tab2_up.offsetHeight-tab_up.scrollTop<=0)
+tab_up.scrollTop-=tab1_up.offsetHeight
+else{
+tab_up.scrollTop++;
+}
+}
+var MyMar_up=setInterval(Marquee_up,speed_up);
+tab_up.onmouseover=function() {clearInterval(MyMar_up)};
+tab_up.onmouseout=function() {MyMar_up=setInterval(Marquee_up,speed_up)};
+-->
+</script>
+          </div>
+      </div>
+</div>
+</div>
+
+<div class="footDiv">
+本溪校区地址 本溪路118号　邮编200093;　凤城校区地址　凤城路50号　邮编200093 <br /> 
+中原校区地址 市光二村57号　邮编200438;　联系电话：65040459　55963421　65797995 <br /> 
+版权所有：上海市杨浦职业技术学校 
+</div>
+</body>
+</html>
