@@ -1,0 +1,102 @@
+<div ms-controller="jxtjController">
+	<h1>教学条件</h1>
+	<ul>
+		<li>
+			<div ms-click="openSub1()">
+				课程教材
+			</div>
+			<ul ms-visible="show_kcjc" class="son">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/kcjc') > -1">
+					<div>
+						<a href="#/jxtj/kcjc">课程教材</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/ckjc') > -1">
+					<div>
+						<a href="#/jxtj/ckjc">参考教材</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/sxzdsc') > -1">
+					<div>
+						<a href="#/jxtj/sxzdsc">实训指导手册</a>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<div ms-click="openSub2()">
+				实训条件
+			</div>
+			<ul ms-visible="show_sxtj" class="son">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/xnsxs') > -1">
+					<div>
+						<a href="#/jxtj/xnsxs">校内实训室</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/xwsxjd') > -1">
+					<div>
+						<a href="#/jxtj/xwsxjd">校外实训基地</a>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<div ms-click="openSub3()">
+				课程资源
+			</div>
+			<ul ms-visible="show_kczy" class="son">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/wkczy') > -1">
+					<div>
+						<a href="#/jxtj/wkczy">微课程资源</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/tpzy') > -1">
+					<div>
+						<a href="#/jxtj/tpzy">图片资源</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/jxkj') > -1">
+					<div>
+						<a href="#/jxtj/jxkj">教学课件</a>
+					</div>
+				</li>
+
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/bckj') > -1">
+					<div>
+						<a href="#/jxtj/bckj">补充课件</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/jhsxxkj') > -1">
+					<div>
+						<a href="#/jxtj/jhsxxkj">交互式学习课件</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/hyzx) > -1">
+					<div>
+						<a href="#/jxtj/hyzx">行业资讯</a>
+					</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+
+<script>
+	avalon.define("jxtjController", function(vm) {
+		vm.show_kcjc = true;
+		vm.show_sxtj = false;
+		vm.show_kczy = false;
+		
+		vm.openSub1 = function() {
+			vm.show_kcjc = !vm.show_kcjc;
+		}
+		vm.openSub2 = function() {
+			vm.show_sxtj = !vm.show_sxtj;
+		}
+		vm.openSub3 = function() {
+			vm.show_kczy = !vm.show_kczy;
+		}
+	});
+	avalon.scan();
+</script>
