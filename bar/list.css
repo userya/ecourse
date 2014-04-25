@@ -63,18 +63,19 @@ body {
 	text-align:left;
 	
 }
-.main .listnav .box ul .son{ padding-left:10px;}
+.main .listnav .box ul .son{ padding-left:0px;}
 .main .listnav .box ul .son li.on{ background:none; background:#fff url(imgs/ondot.png) right center no-repeat;}
 .main .listnav .box ul li {
-	line-height:37px; display:block; font-size:14px; color:#0e679e; background:url(imgs/navdot.png) no-repeat left center; padding-left:30px;
+	line-height:37px; display:block; font-size:14px; color:#0e679e; background-image:url(imgs/navdot.png);background-repeat:no-repeat;background-position:0 12px;   padding-left:30px;
 	
 }
+
 .main .listnav .box ul li.on{background-image:url(imgs/navdot.png),url(imgs/ondot.png); background-position:left,right; background-repeat:no-repeat ; background-color:
 #FFF}
 .main .listnav .box ul li .on{ background-color:#fff; display:block; height:27px; color:#333}
 
 .main .listnav .box ul li .son a{ background:none; color:#fff}
-.main .listnav .box .son li{ background:none; color:#fff; padding-left:15px;}
+.main .listnav .box .son li{ background:none; color:#fff; padding-left:1px;}
 .main .listnav .box .son li a{ color:#fff; font-size:14px;}
 .main .listnav .box .son p a{ padding-left:30px;}
 .main .listnav .box ul li.on a { color:#333} 

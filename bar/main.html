@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="list.css" rel="stylesheet" />
+<link href="comn.css" rel="stylesheet" />
+<link href="xuexi.css" rel="stylesheet" />
+<script src="js/avalon.js"></script>
+<script src="menu.js"></script>
+</head>
+
+<body>
+	<div class="texbox" ms-controller="menuController">
+		<div class="top">
+			<h1 class="logo"></h1>
+			<ul class="nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="#/kctd/default">课程团队</a></li>
+				<li><a href="#/jxwj/default">教学文件</a></li>
+				<li><a href="#/jxtj/default">教学条件</a></li>
+				<li><a href="#/jxss/default">教学实施</a></li>
+				<li><a href="#/kcts/default">课程特色</a></li>
+				<li><a href="#/zxxx/default">在线学习</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="listnav">
+				<div class="border">
+					<div class="box">
+						<h1>{{menu[currentMenu].title}}</h1>
+						<ul ms-each-el="menu[currentMenu].sub">
+							<li>
+								<div ms-click="openSub(el)" style="cursor: pointer;" >
+								{{el.title}}
+								</div>
+								<ul class="son" ms-each-el2="el.sub" ms-visible="el.show">
+									<li ms-class-on="el2.clicked"> &gt;<a ms-href="{{el2.url}}">{{el2.title}}</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="texbox"></div>
+		</div>
+		<div class="foot">
+			<p>本溪校区地址 本溪路118号 邮编200093; 凤城校区地址 凤城路50号 邮编200093</p>
+			<p>中原校区地址 市光二村57号 邮编200438; 联系电话：65040459 55963421 65797995</p>
+			<p>版权所有：上海市杨浦职业技术学校</p>
+		</div>
+	</div>
+</body>
+<script>
+	require([ "mmRouter", "mmRequest" ], function() {
+
+		var menuVM = avalon.define("menuController", function(vm) {
+			vm.menu = menuData;
+			vm.currentMenu = '';
+			vm.openSub = function(el){
+				el.show = !el.show;
+			}
+		});
+		avalon.router.get("/kctd/:param", function(param) {
+			avalon.log(menuVM.menu);
+			menuVM.currentMenu = 'kctd';
+			if (param == 'default') {
+				
+			}
+		});
+		avalon.router.get("/jxwj/:param", function(param) {
+
+		});
+		avalon.router.get("/jxtj/:param", function(param) {
+
+		});
+		avalon.router.get("/jxss/:param", function(param) {
+
+		});
+		avalon.router.get("/kcts/:param", function(param) {
+
+		});
+		avalon.router.get("/zxxx/:param", function(param) {
+
+		});
+		avalon.history.start({
+			basepath : "/bar"
+		});
+
+		avalon.scan();
+	});
+</script>
+</html>
