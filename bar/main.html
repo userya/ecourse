@@ -2,14 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
+<title>酒吧服务</title>
 <link href="list.css" rel="stylesheet" />
 <link href="comn.css" rel="stylesheet" />
 <link href="xuexi.css" rel="stylesheet" />
 <script src="js/avalon.js"></script>
-<script src="menu.js"></script>
 </head>
-
 <body>
 	<div class="texbox" ms-controller="menuController">
 		<div class="top">
@@ -24,26 +22,8 @@
 				<li><a href="#/zxxx/default">在线学习</a></li>
 			</ul>
 		</div>
-		<div class="main">
-			<div class="listnav">
-				<div class="border">
-					<div class="box">
-						<h1>{{menu[currentMenu].title}}</h1>
-						<ul ms-each-el="menu[currentMenu].sub">
-							<li>
-								<div ms-click="openSub(el)" style="cursor: pointer;" >
-								{{el.title}}
-								</div>
-								<ul class="son" ms-each-el2="el.sub" ms-visible="el.show">
-									<li ms-class-on="el2.clicked"> &gt;<a ms-href="{{el2.url}}">{{el2.title}}</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="texbox"></div>
-		</div>
+		<div class="main" ms-include-src="s_{{tpl}}/index.html"
+			style="min-height: 500px;">&nbsp;</div>
 		<div class="foot">
 			<p>本溪校区地址 本溪路118号 邮编200093; 凤城校区地址 凤城路50号 邮编200093</p>
 			<p>中原校区地址 市光二村57号 邮编200438; 联系电话：65040459 55963421 65797995</p>
@@ -51,42 +31,41 @@
 		</div>
 	</div>
 </body>
+
 <script>
 	require([ "mmRouter", "mmRequest" ], function() {
-
 		var menuVM = avalon.define("menuController", function(vm) {
-			vm.menu = menuData;
-			vm.currentMenu = '';
-			vm.openSub = function(el){
-				el.show = !el.show;
-			}
+			vm.tpl = 'kctd';
+			vm.page = 'zjjs';
 		});
+
 		avalon.router.get("/kctd/:param", function(param) {
-			avalon.log(menuVM.menu);
-			menuVM.currentMenu = 'kctd';
+			menuVM.tpl = 'kctd';
 			if (param == 'default') {
-				
+				menuVM.page = 'zjjs';
+			} else {
+				menuVM.page = param;
 			}
 		});
 		avalon.router.get("/jxwj/:param", function(param) {
-
+			menuVM.tpl = 'jxwj';
 		});
 		avalon.router.get("/jxtj/:param", function(param) {
-
+			menuVM.tpl = 'jxtj';
 		});
 		avalon.router.get("/jxss/:param", function(param) {
-
+			menuVM.tpl = 'jxss';
 		});
 		avalon.router.get("/kcts/:param", function(param) {
-
+			menuVM.tpl = 'kcts';
 		});
 		avalon.router.get("/zxxx/:param", function(param) {
-
+			menuVM.tpl = 'zxxx';
 		});
+
 		avalon.history.start({
 			basepath : "/bar"
 		});
-
 		avalon.scan();
 	});
 </script>

@@ -72,7 +72,7 @@ body {
 
 .main .listnav .box ul li.on{background-image:url(imgs/navdot.png),url(imgs/ondot.png); background-position:left,right; background-repeat:no-repeat ; background-color:
 #FFF}
-.main .listnav .box ul li .on{ background-color:#fff; display:block; height:27px; color:#333}
+.main .listnav .box ul li .on{ background-color:#fff; display:block;/*  height:27px;  */color:#333}
 
 .main .listnav .box ul li .son a{ background:none; color:#fff}
 .main .listnav .box .son li{ background:none; color:#fff; padding-left:1px;}

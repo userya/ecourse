@@ -1,0 +1,49 @@
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<div class="listnav">
+	<div class="border">
+		<div class="box">
+			<div ms-controller="jxwjController">
+				<h1>教学文件</h1>
+				<ul>
+					<li>
+						<div>专业教学实施方案</div>
+					</li>
+					<li>
+						<div>授课计划</div>
+					</li>
+					<li>
+						<div>课程标准</div>
+					</li>
+					<li>
+						<div ms-click="openSub()">管理制度</div>
+						<ul ms-visible="show">
+							<li>
+								<div>教学常规管理</div>
+							</li>
+							<li>
+								<div>教学质量监控</div>
+							</li>
+							<li>
+								<div>实训室管理</div>
+							</li>
+							<li>
+								<div>实习管理</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="texbox"></div>
+
+<script>
+avalon.define("jxwjController",function(vm){
+	vm.show = false;
+	vm.openSub = function(){
+		vm.show = !vm.show;
+	}
+});
+avalon.scan();
+</script>
