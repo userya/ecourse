@@ -1,49 +1,56 @@
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<div class="listnav">
-	<div class="border">
-		<div class="box">
-			<div ms-controller="jxwjController">
-				<h1>教学文件</h1>
-				<ul>
-					<li>
-						<div>专业教学实施方案</div>
-					</li>
-					<li>
-						<div>授课计划</div>
-					</li>
-					<li>
-						<div>课程标准</div>
-					</li>
-					<li>
-						<div ms-click="openSub()">管理制度</div>
-						<ul ms-visible="show">
-							<li>
-								<div>教学常规管理</div>
-							</li>
-							<li>
-								<div>教学质量监控</div>
-							</li>
-							<li>
-								<div>实训室管理</div>
-							</li>
-							<li>
-								<div>实习管理</div>
-							</li>
-						</ul>
-					</li>
-				</ul>
+<div ms-controller="jxwjController">
+	<h1>鏁欏鏂囦欢</h1>
+	<ul>
+		<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/zyjxssfa') > -1">
+			<div>
+				<a href="#/jxwj/zyjxssfa">涓撲笟鏁欏瀹炴柦鏂规</a>
 			</div>
-		</div>
-	</div>
+		</li>
+		<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/skjh') > -1">
+			<div>
+				<a href="#/jxwj/skjh">鎺堣璁″垝</a>
+			</div>
+		</li>
+		<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/kcbz') > -1">
+			<div>
+				<a href="#/jxwj/kcbz">璇剧▼鏍囧噯</a>
+			</div>
+		</li>
+		<li>
+			<div ms-click="openSub()">绠＄悊鍒跺害</div>
+			<ul ms-visible="show" class="son">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/jxcggl') > -1">
+					<div>
+						<a href="#/jxwj/jxcggl">鏁欏甯歌绠＄悊</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/jxzljk') > -1">
+					<div>
+						<a href="#/jxwj/jxzljk">鏁欏璐ㄩ噺鐩戞帶</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/sxsgl') > -1">
+					<div>
+						<a href="#/jxwj/sxsgl">瀹炶瀹ょ鐞�</a>
+					</div>
+				</li>
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxwj/sxgl') > -1">
+					<div>
+						<a href="#/jxwj/sxgl">瀹炰範绠＄悊</a>
+					</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
 </div>
-<div class="texbox"></div>
+
 
 <script>
-avalon.define("jxwjController",function(vm){
-	vm.show = false;
-	vm.openSub = function(){
-		vm.show = !vm.show;
-	}
-});
-avalon.scan();
+	avalon.define("jxwjController", function(vm) {
+		vm.show = false;
+		vm.openSub = function() {
+			vm.show = !vm.show;
+		}
+	});
+	avalon.scan();
 </script>

@@ -22,14 +22,22 @@
 				<li><a href="#/zxxx/default">在线学习</a></li>
 			</ul>
 		</div>
-		<div class="main" ms-include-src="s_{{tpl}}/index.html"
-			style="min-height: 500px;">&nbsp;</div>
+		<div class="main">
+			<div class="listnav">
+				<div class="border">
+					<div class="box" ms-include-src="s_{{tpl}}/index.html"></div>
+				</div>
+			</div>
+
+			<div class="texbox" ms-include-src="s_{{tpl}}/{{page}}.html"></div>
+		</div>
 		<div class="foot">
 			<p>本溪校区地址 本溪路118号 邮编200093; 凤城校区地址 凤城路50号 邮编200093</p>
 			<p>中原校区地址 市光二村57号 邮编200438; 联系电话：65040459 55963421 65797995</p>
 			<p>版权所有：上海市杨浦职业技术学校</p>
 		</div>
 	</div>
+
 </body>
 
 <script>
@@ -49,18 +57,43 @@
 		});
 		avalon.router.get("/jxwj/:param", function(param) {
 			menuVM.tpl = 'jxwj';
+			if (param == 'default') {
+				menuVM.page = 'zyjxssfa';
+			} else {
+				menuVM.page = param;
+			}
 		});
 		avalon.router.get("/jxtj/:param", function(param) {
 			menuVM.tpl = 'jxtj';
+			if (param == 'default') {
+				menuVM.page = 'zjjs';
+			} else {
+				menuVM.page = param;
+			}
 		});
 		avalon.router.get("/jxss/:param", function(param) {
 			menuVM.tpl = 'jxss';
+			if (param == 'default') {
+				menuVM.page = 'zjjs';
+			} else {
+				menuVM.page = param;
+			}
 		});
 		avalon.router.get("/kcts/:param", function(param) {
 			menuVM.tpl = 'kcts';
+			if (param == 'default') {
+				menuVM.page = 'zjjs';
+			} else {
+				menuVM.page = param;
+			}
 		});
 		avalon.router.get("/zxxx/:param", function(param) {
 			menuVM.tpl = 'zxxx';
+			if (param == 'default') {
+				menuVM.page = 'zjjs';
+			} else {
+				menuVM.page = param;
+			}
 		});
 
 		avalon.history.start({
