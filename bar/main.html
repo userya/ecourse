@@ -37,7 +37,7 @@
 			<p>中原校区地址 市光二村57号 邮编200438; 联系电话：65040459 55963421 65797995</p>
 			<p>版权所有：上海市杨浦职业技术学校</p>
 		</div>
-		<div ms-include="'imagePopupDivTpl'" class="model"></div>
+		<div ms-include="'imagePopupDivTpl'" class="model" ms-visible="showImagePopupDivTpl"></div>
 	</div>
 </body>
 
@@ -46,8 +46,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -300px;
-	margin-top: -150px;
+	z-index:9999;
 }
 </style>
 
