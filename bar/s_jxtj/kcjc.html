@@ -1,1 +1,105 @@
-ckjc
+<div class="here">
+	<span><a class="par" href="#">教学条件</a></span><span>></span><span>
+		<a href="#">课程教材</a>
+	</span><span>></span><span> <a href="#">课程教材</a></span>
+</div>
+<div class="kcjc" ms-controller="kcjcController">
+	<h1>课程教材介绍</h1>
+	<div class="tex">
+		<p>《酒吧服务》许康主编，格致出版社和上海人民出版社</p>
+		<p>该教材是按照上海市中等职业学校饭店服务与管理专业教学标准中《酒吧服务》课程标准的要求而编写的，是中等职
+			业教育课改项目成果教材，“任务引领型”规划教材。</p>
+		<p>该教材以就业为导向，紧密结合行业对酒吧服务岗位的技能要求设计教学单元，内容丰富，切合实际，通俗易懂，具
+			有较强的行业性和实用性，为教学设计提供了框架性的指导。但是该教材在技能教授上只是停留在酒单的描述及鸡尾
+			酒图片的展示，在指导学生调酒技能练习方面有所欠缺，因此，需要教师开发相应的实训指导手册，以帮助学生进行 技能训练。</p>
+	</div>
+	<div class="pic">
+		<div class="focus">
+			<ul class="rslides f426x240 rslides1" style="max-width: 426px;">
+				<li id="rslides1_s3"
+					style="display: list-item; float: left; position: relative;"
+					class="rslides1_on"><a href="#" target="_blank"><img
+						ms-src="s_jxtj/kcjc/{{index}}.jpg"></a></li>
+			</ul>
+			<a href="javascript:void(0)" ms-click="previous"
+				class="rslides_nav rslides1_nav prev">Previous</a><a
+				href="javascript:void(0)" class="rslides_nav rslides1_nav next"
+				ms-click="next">Next</a>
+		</div>
+	</div>
+	<div class="page">
+		<ul>
+			<li ms-click="setIndex(1)"><a href="javascript:void(0)">首页</a></li>
+			<li ms-click="previous"><a href="javascript:void(0)">上一页</a></li>
+			<li ms-repeat="array" ms-class-on="index == $index + 1" ms-click="setIndex($index + 1)" >
+			<a href="javascript:void(0)">{{el}}</a>
+			</li>
+			<!-- 
+			<li ms-class-on="index == 1" ms-click="setIndex(1)"><a href="javascript:void(0)">1</a></li>
+			<li ms-class-on="index == 2" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 3" ms-click="setIndex(3)"><a href="javascript:void(0)">3</a></li>
+			<li ms-class-on="index == 4" ms-click="setIndex(4)"><a href="javascript:void(0)">4</a></li>
+			<li ms-class-on="index == 5" ms-click="setIndex(5)"><a href="javascript:void(0)">5</a></li>
+			<li ms-class-on="index == 6" ms-click="setIndex(6)"><a href="javascript:void(0)">6</a></li>
+			<li ms-class-on="index == 7" ms-click="setIndex(7)"><a href="javascript:void(0)">7</a></li>
+			<li ms-class-on="index == 8" ms-click="setIndex(8)"><a href="javascript:void(0)">8</a></li>
+			<li ms-class-on="index == 9" ms-click="setIndex(9)"><a href="javascript:void(0)">9</a></li>
+			<li ms-class-on="index == 10" ms-click="setIndex(10)"><a href="javascript:void(0)">10</a></li>
+			<li ms-class-on="index == 11" ms-click="setIndex(11)"><a href="javascript:void(0)">11</a></li>
+			<li ms-class-on="index == 12" ms-click="setIndex(12)"><a href="javascript:void(0)">12</a></li>
+			<li ms-class-on="index == 13" ms-click="setIndex(13)"><a href="javascript:void(0)">13</a></li>
+			<li ms-class-on="index == 14" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 15" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 16" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 17" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 18" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 19" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 20" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 21" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 22" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 23" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 24" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 25" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 26" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 27" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 28" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			<li ms-class-on="index == 29" ms-click="setIndex(2)"><a href="javascript:void(0)">2</a></li>
+			 -->
+			<li ms-click="next"><a href="javascript:void(0)">下一页</a></li>
+			<li ms-click="setIndex(28)"><a href="javascript:void(0)">尾页</a></li>
+		</ul>
+		<p>
+			共 <span class="red"> 28 </span> 条信息 分 <span class="red">28</span>页
+			每页显示<span class="red"> 1 </span>条 当前显示第<span class="red">
+				{{index}} </span>页
+		</p>
+	</div>
+</div>
+<script>
+	
+	avalon.define("kcjcController", function(vm) {
+		var pageArray = [];
+		for(var i=1; i<=29; i++) {
+			pageArray.push(i);
+		}
+		vm.array = pageArray;
+		vm.index = 1;
+		vm.previous = function() {
+			if (vm.index > 1) {
+				vm.index--;
+			}
+		}
+		vm.next = function() {
+			if (vm.index < 28) {
+				vm.index++;
+			}
+		}
+		vm.setIndex = function(index){
+			if(index>0 && index<=28) {
+				vm.index = index
+			}
+		}
+		
+	});
+	avalon.scan();
+</script>
