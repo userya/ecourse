@@ -2,15 +2,15 @@
 /* CSS Document */
 
 
-.mianbox {
+.mianbox_zj {
 	padding:50px 0 0 40px;
 	overflow:hidden
 }
-.mianbox ul {
+.mianbox_zj ul {
 	list-style:none; overflow:hidden
 }
 
-.mianbox ul li{ width:290px; float:left; margin-right:20px; margin-left:20px;}
-.mianbox ul li h1.name1{ background:url(imgs/name1.png); width:132px; height:52px; line-height:52px; text-align:center; font-size:24px; color:#222}
-.mianbox ul li h1.name2{ background:url(imgs/name2.png); width:132px; height:52px; line-height:52px; text-align:center; font-size:24px; color:#222}
-.mianbox ul li p{ line-height:25px;}
+.mianbox_zj ul li{ width:290px; float:left; margin-right:20px; margin-left:20px;}
+.mianbox_zj ul li h1.name1{ background:url(imgs/name1.png); width:132px; height:52px; line-height:52px; text-align:center; font-size:24px; color:#222}
+.mianbox_zj ul li h1.name2{ background:url(imgs/name2.png); width:132px; height:52px; line-height:52px; text-align:center; font-size:24px; color:#222}
+.mianbox_zj ul li p{ line-height:25px;}

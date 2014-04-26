@@ -129,7 +129,7 @@ body {
 
 .main .texbox .tch{ padding-top:35px; padding-left:45px; overflow:hidden}
 .pictex .pic{ width:285px; float:left; padding-right:30px;}
-.pictex .pic p{ background:url(imgs/laoshi.png) no-repeat; width:285px; height:381px; display:block; position:relative;}
+.pictex .pic p{ /* background:url(imgs/laoshi.png) no-repeat; */ width:285px; height:381px; display:block; position:relative;}
 .pictex .pic p span{ background:url(imgs/jb.png) no-repeat; width:72px; height:72px; position:absolute; top:-27px; right:-27px; z-index:1}
 
 .pictex{ overflow:hidden; margin-bottom:20px; padding-top:25px;}
@@ -258,4 +258,6 @@ body {
 .backupBtn a{
 	font-size: 130%
 }
-
+.popupSpan {
+	cursor: pointer;
+}
