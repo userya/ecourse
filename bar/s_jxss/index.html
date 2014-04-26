@@ -1,112 +1,53 @@
 <div ms-controller="jxssController">
-	<h1>教学条件</h1>
+	<h1>教学实施</h1>
 	<ul>
 		<li>
-			<div ms-click="openSub1()">
-				教学设计
-			</div>
-			<ul ms-visible="show_kcjc" class="son">
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/kcjc') > -1">
+			<div ms-click="openSub1()">教学设计</div>
+			<ul ms-visible="show_1" class="son">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/zdja') > -1">
 					<div>
-						<a href="#/jxss/kcjc">重点教案</a>
+						<a href="#/jxss/zdja">重点教案</a>
 					</div>
 				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/ckjc') > -1">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/ja') > -1">
 					<div>
-						<a href="#/jxss/ckjc">教案</a>
-					</div>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<div ms-click="openSub2()">
-				典型教学案例
-			</div>
-			<ul ms-visible="show_sxtj" class="son">
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/xnsxs') > -1">
-					<div>
-						<a href="#/jxss/xnsxs">校内实训室</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/xwsxjd') > -1">
-					<div>
-						<a href="#/jxss/xwsxjd">校外实训基地</a>
+						<a href="#/jxss/ja">教案</a>
 					</div>
 				</li>
 			</ul>
 		</li>
-		<li>
-			<div ms-click="openSub3()">
-				示范教学
+		<li ms-class-on="(tpl + '/' + page).indexOf('jxss/dxjxja') > -1">
+			<div>
+				<a href="#/jxss/dxjxja">典型教学案例</a>
 			</div>
-			<ul ms-visible="show_kczy" class="son">
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/wkczy') > -1">
+		</li>
+		<li ms-class-on="(tpl + '/' + page).indexOf('jxss/sfjx') > -1">
+			<div>
+				<a href="#/jxss/sfjx">示范教学</a>
+			</div>
+		</li>
+		<li>
+			<div ms-click="openSub2()">教学效果</div>
+			<ul ms-visible="show_2" class="son">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/gwcc') > -1">
 					<div>
-						<a href="#/jxss/wkczy">微课程资源</a>
+						<a href="#/jxss/gwcc">岗位成才</a>
 					</div>
 				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/tpzy') > -1">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/xgcc') > -1">
 					<div>
-						<a href="#/jxss/tpzy">图片资源</a>
+						<a href="#/jxss/xgcc">星光璀璨</a>
 					</div>
 				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/jxkj') > -1">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/jnkh') > -1">
 					<div>
-						<a href="#/jxss/jxkj">教学课件</a>
+						<a href="#/jxss/jnkh">技能考核</a>
 					</div>
 				</li>
 
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/bckj') > -1">
+				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/jxpj') > -1">
 					<div>
-						<a href="#/jxss/bckj">补充课件</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/jhsxxkj') > -1">
-					<div>
-						<a href="#/jxss/jhsxxkj">交互式学习课件</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/hyzx) > -1">
-					<div>
-						<a href="#/jxss/hyzx">行业资讯</a>
-					</div>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<div ms-click="openSub4()">
-				教学效果
-			</div>
-			<ul ms-visible="show_kczy" class="son">
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/wkczy') > -1">
-					<div>
-						<a href="#/jxss/wkczy">微课程资源</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/tpzy') > -1">
-					<div>
-						<a href="#/jxss/tpzy">图片资源</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/jxkj') > -1">
-					<div>
-						<a href="#/jxss/jxkj">教学课件</a>
-					</div>
-				</li>
-
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/bckj') > -1">
-					<div>
-						<a href="#/jxss/bckj">补充课件</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/jhsxxkj') > -1">
-					<div>
-						<a href="#/jxss/jhsxxkj">交互式学习课件</a>
-					</div>
-				</li>
-				<li ms-class-on="(tpl + '/' + page).indexOf('jxss/hyzx) > -1">
-					<div>
-						<a href="#/jxss/hyzx">行业资讯</a>
+						<a href="#/jxss/jxpj">教学评价</a>
 					</div>
 				</li>
 			</ul>
@@ -117,18 +58,13 @@
 
 <script>
 	avalon.define("jxssController", function(vm) {
-		vm.show_kcjc = true;
-		vm.show_sxtj = false;
-		vm.show_kczy = false;
-		
+		vm.show_1 = true;
+		vm.show_2 = false;
 		vm.openSub1 = function() {
-			vm.show_kcjc = !vm.show_kcjc;
+			vm.show_1 = !vm.show_1;
 		}
 		vm.openSub2 = function() {
-			vm.show_sxtj = !vm.show_sxtj;
-		}
-		vm.openSub3 = function() {
-			vm.show_kczy = !vm.show_kczy;
+			vm.show_2 = !vm.show_2;
 		}
 	});
 	avalon.scan();

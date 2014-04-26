@@ -5,7 +5,7 @@
 			<div ms-click="openSub1()">
 				课程教材
 			</div>
-			<ul ms-visible="show_kcjc" class="son">
+			<ul ms-visible="show_1" class="son">
 				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/kcjc') > -1">
 					<div>
 						<a href="#/jxtj/kcjc">课程教材</a>
@@ -27,7 +27,7 @@
 			<div ms-click="openSub2()">
 				实训条件
 			</div>
-			<ul ms-visible="show_sxtj" class="son">
+			<ul ms-visible="show_2" class="son">
 				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/xnsxs') > -1">
 					<div>
 						<a href="#/jxtj/xnsxs">校内实训室</a>
@@ -44,7 +44,7 @@
 			<div ms-click="openSub3()">
 				课程资源
 			</div>
-			<ul ms-visible="show_kczy" class="son">
+			<ul ms-visible="show_3" class="son">
 				<li ms-class-on="(tpl + '/' + page).indexOf('jxtj/wkczy') > -1">
 					<div>
 						<a href="#/jxtj/wkczy">微课程资源</a>
@@ -84,18 +84,22 @@
 
 <script>
 	avalon.define("jxtjController", function(vm) {
-		vm.show_kcjc = true;
-		vm.show_sxtj = false;
-		vm.show_kczy = false;
+		vm.show_1 = true;
+		vm.show_2 = false;
+		vm.show_3 = false;
+		vm.show_4= false;
 		
 		vm.openSub1 = function() {
-			vm.show_kcjc = !vm.show_kcjc;
+			vm.show_1 = !vm.show_1;
 		}
 		vm.openSub2 = function() {
-			vm.show_sxtj = !vm.show_sxtj;
+			vm.show_2 = !vm.show_2;
 		}
 		vm.openSub3 = function() {
-			vm.show_kczy = !vm.show_kczy;
+			vm.show_3 = !vm.show_3;
+		}
+		vm.openSub4 = function() {
+			vm.show_4 = !vm.show_4;
 		}
 	});
 	avalon.scan();

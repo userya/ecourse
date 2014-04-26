@@ -18,7 +18,8 @@
 				<li><a href="#/jxwj/default">教学文件</a></li>
 				<li><a href="#/jxtj/default">教学条件</a></li>
 				<li><a href="#/jxss/default">教学实施</a></li>
-				<li><a href="#/kcts/default">课程特色</a></li>
+				<!-- <li><a href="#/kcts/default">课程特色</a></li> -->
+				<li><a href="javascript:alert('建设中')">课程特色</a></li> 
 				<li><a href="#/zxxx/default">在线学习</a></li>
 			</ul>
 		</div>
@@ -66,7 +67,7 @@
 		avalon.router.get("/jxtj/:param", function(param) {
 			menuVM.tpl = 'jxtj';
 			if (param == 'default') {
-				menuVM.page = 'zjjs';
+				menuVM.page = 'kcjc';
 			} else {
 				menuVM.page = param;
 			}
@@ -74,7 +75,7 @@
 		avalon.router.get("/jxss/:param", function(param) {
 			menuVM.tpl = 'jxss';
 			if (param == 'default') {
-				menuVM.page = 'zjjs';
+				menuVM.page = 'zdja';
 			} else {
 				menuVM.page = param;
 			}
@@ -82,7 +83,7 @@
 		avalon.router.get("/kcts/:param", function(param) {
 			menuVM.tpl = 'kcts';
 			if (param == 'default') {
-				menuVM.page = 'zjjs';
+				menuVM.page = '???';
 			} else {
 				menuVM.page = param;
 			}
@@ -90,7 +91,7 @@
 		avalon.router.get("/zxxx/:param", function(param) {
 			menuVM.tpl = 'zxxx';
 			if (param == 'default') {
-				menuVM.page = 'zjjs';
+				menuVM.page = 'xxzl';
 			} else {
 				menuVM.page = param;
 			}
